@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["simplify"]
+
+[project]
+name = "simplify"
+version = "1.0"
+dependencies = [
+    "requests",
+    "rich"
+]
+requires-python = '>= 3.12.5' 
+authors = [
+    {name = "Kira"}
+]
+maintainers = [
+    {name = "Kira"}
+]
+description = "Word definition look up"
+readme = "README.md"
+license = {text = "MIT License"}
+keywords = ["dictionary", "word definitions"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Private :: Do Not Upload"
+]
+
+[project.urls]
+Repository = "https://github.com/AntsForBreakfast/Simplify"
+Issues = "https://github.com/AntsForBreakfast/Simplify/issues"
+
+[project.scripts]
+simplify = "simplify:cli.main"
+

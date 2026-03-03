@@ -1,2 +1,6 @@
 requests
+<<<<<<< HEAD
 termcolor
+=======
+rich
+>>>>>>> 207226f (Update from old time)
